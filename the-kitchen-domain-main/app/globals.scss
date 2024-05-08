@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+body {
+	color: white;
+	background-color: black;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.navigation-buttons {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px; /* adjust this as per your requirement */
+}
+
+.navigation-buttons button {
+	margin: 0 5px; /* gives spacing between the two buttons */
+}
+
+.left_btn {
+	position: absolute;
+	left: -70px;
+	bottom: 140px;
+}
+
+.right_btn {
+	position: absolute;
+	right: -70px;
+	bottom: 140px;
+}
+
+.swiper-pagination-bullet {
+	background-color: #ee0202 !important;
+}
